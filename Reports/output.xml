@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.6 on darwin)" generated="20221028 04:37:17.112" rpa="false" schemaversion="3">
+<suite id="s1" name="CreateNewUser" source="/Users/ned/PycharmProjects/RobotFrameworkAutomationProject/CreateNewUser.robot">
+<test id="s1-t1" name="Add new address to user profile" line="17">
+<kw name="Login User" library="MyKeywords">
+<arg>${EMAIL_ADDRESS}</arg>
+<arg>${PASSWORD}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221028 04:37:17.859" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221028 04:37:17.859" endtime="20221028 04:37:23.704"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221028 04:37:23.705" endtime="20221028 04:37:23.860"/>
+</kw>
+<kw name="Wait and Click Element" library="MyKeywords">
+<arg>${SIGNIN_LINK}</arg>
+<doc>wait until element is enabled before clicking</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:23.861" endtime="20221028 04:37:23.909"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:23.910" level="INFO">Clicking element 'class:login'.</msg>
+<status status="PASS" starttime="20221028 04:37:23.909" endtime="20221028 04:37:25.916"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:23.860" endtime="20221028 04:37:25.916"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${EMAIL_ADDRESS_FIELD}</arg>
+<arg>${username}</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:25.917" endtime="20221028 04:37:25.949"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:25.949" level="INFO">Typing text 'nwolisachinedu2015@yahoo.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20221028 04:37:25.949" endtime="20221028 04:37:26.163"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:25.916" endtime="20221028 04:37:26.164"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:26.164" endtime="20221028 04:37:26.194"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:26.195" level="INFO">Typing text 'Godson2015' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20221028 04:37:26.195" endtime="20221028 04:37:26.288"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:26.164" endtime="20221028 04:37:26.289"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:26.289" level="INFO">Clicking button 'name:SubmitLogin'.</msg>
+<status status="PASS" starttime="20221028 04:37:26.289" endtime="20221028 04:37:29.322"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGE-CONTAIN}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221028 04:37:29.339" level="INFO">Current page contains text 'Chinedu Nwolisa'.</msg>
+<status status="PASS" starttime="20221028 04:37:29.322" endtime="20221028 04:37:29.339"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:17.858" endtime="20221028 04:37:29.339"/>
+</kw>
+<kw name="Add a new address and save" library="MyKeywords">
+<kw name="Wait and Click Element" library="MyKeywords">
+<arg>${MY_ADDRESSES}</arg>
+<doc>wait until element is enabled before clicking</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:29.340" endtime="20221028 04:37:29.370"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:29.370" level="INFO">Clicking element 'xpath://*[@id="center_column"]/div/div[1]/ul/li[3]/a/span'.</msg>
+<status status="PASS" starttime="20221028 04:37:29.370" endtime="20221028 04:37:30.708"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:29.340" endtime="20221028 04:37:30.709"/>
+</kw>
+<kw name="Wait and Click Element" library="MyKeywords">
+<arg>${NEW_ADDRESSES}</arg>
+<doc>wait until element is enabled before clicking</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:30.709" endtime="20221028 04:37:30.746"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:30.747" level="INFO">Clicking element 'xpath://*[@id="center_column"]/div[2]/a/span'.</msg>
+<status status="PASS" starttime="20221028 04:37:30.746" endtime="20221028 04:37:32.165"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:30.709" endtime="20221028 04:37:32.166"/>
+</kw>
+<kw name="Modify Address" library="MyKeywords">
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${NEW_USER_ADDRESS}</arg>
+<arg>Mainland</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:32.168" endtime="20221028 04:37:32.199"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:32.200" level="INFO">Typing text 'Mainland' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20221028 04:37:32.199" endtime="20221028 04:37:32.332"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.167" endtime="20221028 04:37:32.333"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${NEW_USER_CITY}</arg>
+<arg>Atlanta</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:32.335" endtime="20221028 04:37:32.373"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:32.374" level="INFO">Typing text 'Atlanta' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20221028 04:37:32.373" endtime="20221028 04:37:32.485"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.333" endtime="20221028 04:37:32.485"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${NEW_USER_STATE}</arg>
+<arg>Georgia</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20221028 04:37:32.486" level="INFO">Selecting options from selection list 'id:id_state' by label Georgia.</msg>
+<status status="PASS" starttime="20221028 04:37:32.486" endtime="20221028 04:37:32.628"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${NEW_USER_POSTCODE}</arg>
+<arg>08989</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:32.629" endtime="20221028 04:37:32.658"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:32.658" level="INFO">Typing text '08989' into text field 'id:postcode'.</msg>
+<status status="PASS" starttime="20221028 04:37:32.658" endtime="20221028 04:37:32.804"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.628" endtime="20221028 04:37:32.804"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${NEW_USER_PHONE}</arg>
+<arg>2222222</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:32.805" endtime="20221028 04:37:32.838"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:32.839" level="INFO">Typing text '2222222' into text field 'id:phone_mobile'.</msg>
+<status status="PASS" starttime="20221028 04:37:32.838" endtime="20221028 04:37:32.937"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.804" endtime="20221028 04:37:32.938"/>
+</kw>
+<kw name="Wait and Input Text" library="MyKeywords">
+<arg>${NEW_USER_ADDRESS_ALIAS}</arg>
+<arg>Test</arg>
+<doc>wait until element is enabled before inputing text</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:32.939" endtime="20221028 04:37:32.975"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:32.975" level="INFO">Typing text 'Test' into text field 'id:alias'.</msg>
+<status status="PASS" starttime="20221028 04:37:32.975" endtime="20221028 04:37:33.182"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.938" endtime="20221028 04:37:33.182"/>
+</kw>
+<kw name="Wait and Click Element" library="MyKeywords">
+<arg>${SAVE_BTN}</arg>
+<doc>wait until element is enabled before clicking</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:33.184" endtime="20221028 04:37:33.218"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:33.219" level="INFO">Clicking element 'id:submitAddress'.</msg>
+<status status="PASS" starttime="20221028 04:37:33.219" endtime="20221028 04:37:35.324"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:33.183" endtime="20221028 04:37:35.325"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:32.167" endtime="20221028 04:37:35.325"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Georgia</arg>
+<arg>10</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221028 04:37:35.325" endtime="20221028 04:37:35.339"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:29.339" endtime="20221028 04:37:35.339"/>
+</kw>
+<kw name="Delete address and close browser" library="MyKeywords" type="TEARDOWN">
+<kw name="Wait and Click Element" library="MyKeywords">
+<arg>${DELETE_ADDRESS_BTN}</arg>
+<doc>wait until element is enabled before clicking</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221028 04:37:35.341" endtime="20221028 04:37:35.370"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221028 04:37:35.370" level="INFO">Clicking element '//*[@id="center_column"]/div[1]/div/div[2]/ul/li[9]/a[2]/span'.</msg>
+<status status="PASS" starttime="20221028 04:37:35.370" endtime="20221028 04:37:35.483"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:35.340" endtime="20221028 04:37:35.483"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>Accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20221028 04:37:35.483" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20221028 04:37:35.483" endtime="20221028 04:37:35.514"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Georgia</arg>
+<arg>10</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20221028 04:37:38.034" level="INFO">Current page does not contain text 'Georgia'.</msg>
+<status status="PASS" starttime="20221028 04:37:35.514" endtime="20221028 04:37:38.034"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221028 04:37:38.034" endtime="20221028 04:37:38.221"/>
+</kw>
+<status status="PASS" starttime="20221028 04:37:35.340" endtime="20221028 04:37:38.222"/>
+</kw>
+<tag>nedu</tag>
+<status status="PASS" starttime="20221028 04:37:17.857" endtime="20221028 04:37:38.222"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221028 04:37:38.224" endtime="20221028 04:37:38.224"/>
+</kw>
+<doc>Creating a new user account</doc>
+<status status="PASS" starttime="20221028 04:37:17.114" endtime="20221028 04:37:38.224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">nedu</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CreateNewUser">CreateNewUser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
